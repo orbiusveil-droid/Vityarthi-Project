@@ -79,3 +79,4 @@ The program allows storing details of multiple guests using a loop.
     logic-based computation.
     It is suitable for beginners and can be expanded into a full hotel
     management software in the future.
+<img width="597" height="228" alt="snapshot" src="https://github.com/user-attachments/assets/4b6b5c9b-cec5-42f8-a247-c5bfc5d6b532" />
