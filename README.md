@@ -1,82 +1,147 @@
-PROJECT REPORT
-Hotel Booking Management System (Python)
-—————————————-
+📄 README.md — Railway Ticket Booking System
+🚆 Railway Ticket Booking System
 
-1.  INTRODUCTION
-    This project is a simple hotel booking management system developed
-    in Python.
-    It allows users to calculate room charges, apply GST, and maintain
-    guest records.
+A simple console-based Python project that allows users to view trains, book tickets, and check their bookings — created according to the project objectives:
+✔ Identifying a meaningful problem
+✔ Designing a technical solution
+✔ Implementing it using course-level tools
+✔ Demonstrating understanding through working code
 
-2.  OBJECTIVE
-    The main objectives of this project are:
+📌 1. Project Objective
 
--   To automate hotel room booking calculations
--   To maintain accurate guest records
--   To apply GST correctly
--   To make user interaction simple and efficient
+The objective of this project is to apply subject concepts in a real-world context by:
 
-3.  TECHNOLOGIES USED
+Identifying a meaningful problem
 
--   Python (Core Programming)
--   Dictionaries for storing guest data
--   Conditional statements
--   Loops for multiple entries
+Designing a technical solution
 
-4.  SYSTEM FEATURES
+Implementing the solution using the tools/methods learned in the course
 
-A. Room Selection Module
-The system provides 4 types of rooms, each with fixed pricing.
-The user selects a room and enters the number of days, after which the
-program calculates:
-- Base amount
-- GST at 20%
-- Final payable amount
+Demonstrating understanding through documentation and evaluation
 
-B. Guest Information Module
-The program collects detailed guest information including:
-- Name
-- Nationality
-- Address
-- Check-in and check-out details
-- Room number
-- Phone number
-- Aadhar number (if Indian)
+📌 2. Problem Identification
 
-C. Record Storage
-Guest entries are stored inside a Python dictionary using the room
-number as the key.
+Railway ticket booking is often done manually or using complex systems. For learning purposes, this project creates a simplified ticket booking system where:
 
-D. Multi-entry Support
-The program allows storing details of multiple guests using a loop.
+Users can view available trains
 
-5.  WORKING PROCESS
-    Step-by-step workflow:
+Users can book tickets
 
-6.  User selects room type
+Seat count updates automatically
 
-7.  User enters number of stay days
+Users can view all booked tickets
 
-8.  System calculates cost and GST
+This simulates a real-world booking system in an easy, educational way.
 
-9.  Guest details are entered
+📌 3. Features
+✔ View Available Trains
 
-10. Record is stored
+Displays train number, name, available seats, and fare.
 
-11. User decides whether to add more guests
+✔ Book a Ticket
 
-12. Final list of all guests is displayed
+User enters train number
 
-13. ADVANTAGES
+Provides name and age
 
--   Easy to use
--   Accurate billing with GST
--   Maintains structured guest data
--   Beginner-friendly Python logic
+Seat count decreases upon booking
 
-7.  CONCLUSION
-    This project demonstrates basic Python programming skills and
-    logic-based computation.
-    It is suitable for beginners and can be expanded into a full hotel
-    management software in the future.
-<img width="597" height="228" alt="snapshot" src="https://github.com/user-attachments/assets/4b6b5c9b-cec5-42f8-a247-c5bfc5d6b532" />
+Ticket information is stored in memory (no files used)
+
+✔ View All Bookings
+
+Shows all tickets booked in the session.
+
+✔ Menu-Driven Interface
+
+Simple and user-friendly console menu.
+
+✔ No File or Database
+
+All data is stored temporarily in Python lists and dictionaries.
+
+📌 4. Technologies Used
+
+Python (Basic concepts: lists, loops, dictionaries, functions)
+
+No external libraries
+
+No database & no CRUD file operations
+
+📌 5. How to Run the Program
+
+Install Python 3 on your system.
+
+Copy the code into a file named:
+
+railway_booking.py
+
+
+Run the script using Terminal / Command Prompt:
+
+python railway_booking.py
+
+📌 6. Code Overview
+Main components:
+
+trains → List storing train information
+
+bookings → List storing user bookings
+
+show_trains() → Displays available trains
+
+book_ticket() → Handles ticket booking logic
+
+view_bookings() → Shows all ticket bookings
+
+main_menu() → Controls the user interface
+
+📌 7. Sample Output
+=== Railway Ticket Booking System ===
+1. View Available Trains
+2. Book a Ticket
+3. View All Bookings
+4. Exit
+Enter your choice:
+
+
+After booking:
+
+🎉 Ticket Successfully Booked!
+Passenger: Rahul
+Train: Express B (202)
+Fare: ₹200
+
+📌 8. Limitations
+
+Data is not saved after the program ends
+
+No cancellation or modification
+
+No real payment processing
+
+These limitations keep the project simple and suitable for academic learning.
+
+📌 9. Future Improvements (Optional)
+
+Add PNR number generation
+
+Add ticket cancellation feature
+
+Save bookings in a file or database
+
+Add classes (Sleeper/AC)
+
+Create GUI using Tkinter
+
+📌 10. Conclusion
+
+This project successfully demonstrates how to:
+
+Identify a real-world problem
+
+Build a functional technical solution
+
+Apply Python programming skills
+
+Document and evaluate a working system
